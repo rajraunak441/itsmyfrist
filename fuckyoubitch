@@ -1,0 +1,17 @@
+import socket 
+
+s = socket.socket
+print ("Socket loading")
+
+s.blind("localmc",9999)
+
+s.listen(3)
+print(" searching for clients")
+
+while True:
+
+name = c.rev(1024).decode()
+c,addr = s.accept()
+print("conneted with",addr,name)
+
+s.closed()
